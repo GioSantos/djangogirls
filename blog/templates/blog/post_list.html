@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/blog.css">
+
 	<title>Django Girls</title>
 </head>
 <body>
 
-<div>
+<div class="text-header">
 	<h1>Django Girls 2016</h1>
 </div>
 
+<center>
 <div>
 
 	{% for post in posts %}
-		<div>
-			<p>published: {{post.published_date}}</p>
-			<h1>{{post.title}}</h1>
-			<p>{{post.text|linebreaksbr}}</p>
+		<div class="post">
+			<p class="post-published">published: {{post.published_date}}</p>
+			<h4>{{post.title}}</h4>
+			<p class="post-text">{{post.text|linebreaksbr}}</p>
 		</div>
 	{% endfor %}
 	
 </div>
+</center>
 
 </body>
 </html>
