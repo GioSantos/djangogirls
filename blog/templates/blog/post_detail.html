@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	{% extends 'blog/base.html' %}
-	<title>Django Girls</title>
-</head>
-<body>
+{% extends 'blog/base.html' %}
 
 {% block content %}
     <div class="post">
@@ -17,6 +11,3 @@
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
-
-</body>
-</html>
