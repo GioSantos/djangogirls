@@ -15,7 +15,7 @@
             <div class="post-published">
                 {{ post.published_date }}
             </div>
-            <h4><a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
+            <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
             <p class="post-text">{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}

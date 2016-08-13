@@ -2,14 +2,14 @@
 <html>
 <head>
 	{% extends 'blog/base.html' %}
-	<title>Post {{post_id}}</title>
+	<title>Django Girls</title>
 </head>
 <body>
 
 {% block content %}
     <div class="post">
         {% if post.published_date %}
-            <div class="date">
+            <div class="text-published">
                 {{ post.published_date }}
             </div>
         {% endif %}
